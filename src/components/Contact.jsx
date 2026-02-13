@@ -178,10 +178,10 @@ const Contact = () => {
         }`}>
           <div className="text-center">
             <p className="text-gray-blue font-mono mb-4">
-              Designed & Built by <span className="text-neon-blue">Mahir</span>
+              Designed & Built by <span className="text-neon-blue">Masud</span>
             </p>
             <p className="text-gray-blue text-sm">
-              Secure Intelligence Lab Portfolio © 2026 Mahir
+              Portfolio © 2026 Mahir
             </p>
           </div>
         </div>

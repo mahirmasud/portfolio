@@ -24,8 +24,8 @@ const Hero = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/assets/Mahir_Resume.pdf';
-    link.download = 'Mahir_Resume.pdf';
+    link.href = '/assets/Masud_Resume.pdf';
+    link.download = 'Masud_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
