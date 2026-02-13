@@ -43,7 +43,7 @@ const Contact = () => {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'linkedin.com/in/mahirmasud',
-      link: 'https://linkedin.com/in/mahirmasud',
+      link: 'https://www.linkedin.com/in/mohammed-masud-chowdhury-mahir/',
       color: 'neon-blue'
     }
   ];
