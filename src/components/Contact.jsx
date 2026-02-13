@@ -181,7 +181,7 @@ const Contact = () => {
               Designed & Built by <span className="text-neon-blue">Masud</span>
             </p>
             <p className="text-gray-blue text-sm">
-              Portfolio © 2026 Mahir
+              Portfolio © 2026 Masud
             </p>
           </div>
         </div>
