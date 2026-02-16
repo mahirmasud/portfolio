@@ -60,8 +60,7 @@ const About = () => {
           }`}>
             <div className="card-glass p-8 rounded-xl border border-border-glow hover:border-neon-blue transition-all duration-300">
               <p className="text-gray-blue text-lg leading-relaxed mb-6">
-                  Hi, I’m Masud a 
-                   cybersecurity enthuasist and 
+                  Hi, I’m Masud a cybersecurity enthuasist and 
                    AI researcher passionate about building intelligent systems that are as secure as they are innovative. 
                     I focus on bridging the gap between cutting-edge AI development and robust digital defense, ensuring that the technology of tomorrow is built on a foundation of trust.
                     Every project I tackle from fine-tuning high-performance LLMs to 
