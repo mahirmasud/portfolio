@@ -18,10 +18,10 @@ function App() {
       <About />
       <Skills />
       <Experience />
-      <Projects />
-      <Certifications />
-      <Education />
       <Achievements />
+      <Certifications />
+      <Projects />
+      <Education />
       <Contact />
     </div>
   );
