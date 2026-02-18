@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Brain, Shield, Globe, Database, ExternalLink, Github } from 'lucide-react';
+import { Brain, Shield, Globe, Database, ExternalLink, Github, Terminal } from 'lucide-react';
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,6 +28,23 @@ const Projects = () => {
   const filters = ['All Projects', 'AI Research', 'Cybersecurity', 'AI', 'Web'];
 
   const projects = [
+    {
+      title: 'AI-Augmented Recon & Report Generator',
+      description: 'AI-powered reconnaissance automation tool that converts raw scan data into structured, human-readable VAPT reports.',
+      technologies: ['Python', 'Nmap', 'Amass', 'LangChain', 'Llama 3'],
+      Link: '',
+      features: [
+      'Automated Nmap scanning & Amass enumeration pipeline',
+      'AI-generated vulnerability explanations with remediation guidance',
+      'Structured executive + technical report generation',
+      'Human-in-the-loop validation for ethical control'
+        ],
+      categories: ['Cybersecurity', 'AI'],
+      status: 'Ongoing',
+      icon: Terminal,
+      color: 'cyber-green'
+    },
+
     {
       title: 'Social Engineering Defense AI (SED-AI)',
       description: 'Offline RAG assistant for phishing and social engineering defense training',
@@ -156,19 +173,29 @@ const Projects = () => {
                 {/* Project Header */}
                 <div className="flex items-start justify-between mb-6">
                   <div className={`p-4 rounded-lg bg-${project.color}/10 border border-${project.color}/30 group-hover:bg-${project.color}/20 transition-all duration-300`}>
-                    <Icon className={`w-8 h-8 text-${project.color}`} />
+                      <Icon className={`w-8 h-8 text-${project.color}`} />
                   </div>
-                  <div className="flex gap-2">
-                    <a 
-                      href={project.Link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className={`p-2 rounded-lg bg-border-glow hover:bg-${project.color}/20 border border-transparent hover:border-${project.color} transition-all duration-300`}
-                      >
-                      <ExternalLink className={`w-5 h-5 text-gray-blue hover:text-${project.color} transition-colors`} />
-                    </a>
-                  </div>
+
+                    <div className="flex items-center gap-2">
+                      {project.status && (
+                        <span className="px-3 py-1 text-xs font-mono rounded-full bg-cyber-green/20 text-cyber-green border border-cyber-green/40">
+                          {project.status}
+                          </span>
+                              )}
+
+                          {project.Link && (
+                        <a 
+                          href={project.Link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className={`p-2 rounded-lg bg-border-glow hover:bg-${project.color}/20 border border-transparent hover:border-${project.color} transition-all duration-300`}
+                          >
+                          <ExternalLink className={`w-5 h-5 text-gray-blue hover:text-${project.color} transition-colors`} />
+                        </a>
+                            )}
+                      </div>
                 </div>
+
 
                 {/* Project Title */}
                 <h4 className="text-2xl font-bold text-soft-white mb-3 group-hover:text-neon-blue transition-colors duration-300">
